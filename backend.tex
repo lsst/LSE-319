@@ -1,13 +1,13 @@
 \section{Backend Services\label{sec:backend}}
 
 The user-facing Aspects of the LSST Science Platform will be built on top of a number of backend services that can roughly be divided into three categories: \textbf{database services}, \textbf{file services}, and \textbf{batch computing} services (bottom row of Figure~\ref{fig:layeredLSP}).
-The details of these services are described in the Data Management Design Document (\citeds{LDM-148}) and other associated documents; here, we only provide the high-level guidance as to the capabilities which these services will need to expose to the user (through the three Aspects).
+The details of these services are described in the Data Management Design Document \citedsp{LDM-148} and other associated documents; here, we only provide the high-level guidance as to the capabilities which these services will need to expose to the user (through the three Aspects).
 
 \subsection{Database Services}
 
 Key LSST catalogs, both for \textbf{Prompt} and \textbf{Data Release} data products, will be stored in relational databases and made available for querying by users using
 % the Structured Query Language (SQL) as well as
-the Astronomical Data Query Language (ADQL), with some restrictions.
+the Astronomical Data Query Language (ADQL) \citep{2023ivoa.spec.1215M}, with some restrictions.
 These products, and expectations surrounding their schemas, are further described in the \DPDD.
 
 Besides serving the LSST catalogs, LSST databases will also provide a per-user database space allocation.
