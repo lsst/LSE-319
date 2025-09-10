@@ -4,12 +4,13 @@
 
 \title[LSST Science Platform]{LSST Science Platform Vision Document}
 
-\author{M.~Juri\'c, D.~Ciardi, G.P.~Dubois-Felsmann, L.P.~Guy}
-
+\input{authors}
 
 \setDocRef{LSE-319}
 \setDocCurator{Leanne Guy}
-\date{\today}
+\setDocDOI{10.71929/rubin/2587242}
+% Change to \today if this document ever changes again.
+\date{2019-07-24}
 \setDocUpstreamLocation{\url{https://github.com/lsst-dmsst/LSE-319}}
 
 \setDocAbstract{%
@@ -31,6 +32,7 @@ It is intentionally brief, and meant to generally guide the flow-down of require
 \addtohist{1.0}{2017-09-11}{Approved in \href{https://project.lsst.org/groups/ccb/node/1762}{LCR-1013}}{Tim~Jenness}
 \addtohist{}{2019-03-08}{Began changes for LSP review}{Leanne Guy}
 \addtohist{2.0}{2019-07-24}{Approved in \href{https://project.lsst.org/groups/ccb/node/3107}{LCR-1728}}{Approver: V.~Krabbendam; Document: T.~Jenness}
+\addtohist{2.0.1}{2025-09-04}{Add DOI of 10.71929/rubin/2587242 but do not change any content or the primary document date.}{Tim Jenness}
 %\addtohist{2}{yyyy-mm-dd}{Future changes}{Future person}
 }
 
@@ -45,6 +47,6 @@ It is intentionally brief, and meant to generally guide the flow-down of require
 \include{evolution}
 \clearpage
 
-\bibliography{lsst}
+\bibliography{lsst,lsst-dm,refs_ads,ivoa}
 
 \end{document}

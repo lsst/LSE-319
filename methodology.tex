@@ -8,7 +8,7 @@ The development of the Portal, Notebook, and Web API Aspects will start from sig
 This is a deliberate approach designed to minimize technical risk and leverage end-user familiarity with these interfaces.
 The latter also reduces the barrier to user adoption of the products eventually delivered for LSST.
 
-The \textbf{Portal Aspect} is based on the existing, production quality, archive portal interface developed at IRSA/IPAC --- the \emph{Firefly} toolkit.
+The \textbf{Portal Aspect} is based on the existing, production quality, archive portal interface developed at IRSA/IPAC --- the \emph{Firefly} toolkit \citep{2016SPIE.9913E..0YR}.
 The primary challenge is integrating the existing Firefly code, and updating the user experience to conform to anticipated user expectations (e.g., supporting all-sky maps and pan/zoom/click-type exploration).
 Consistent with the general philosophy, DM should look at achieving the necessary upgrades by re-using existing well-known libraries and tools (e.g., the Plotly library is being adopted to provide 2D and 3D visualizations of tabular data).
 
@@ -17,8 +17,8 @@ The development of this Aspect of the LSST Science Platform will focus on deploy
 
 Finally, the \textbf{Web API Aspect} is envisioned as implementing existing, widely-adopted, community protocols (in particular, ones from the Virtual Observatory suite of protocols and standards).
 Similarly to the other Aspects, it will benefit from leveraging existing codes and libraries wherever appropriate.
-We view providing a robust TAP (including ObsTAP) service as particularly critical, both for external and internal use.
-Other IVOA standards that we expect to support include SCS for simple catalog searches, SIAv2 for image searches, SODA for image cutouts and mosaics, and VOSpace (in addition to WebDAV) for access to user files.
+We view providing a robust TAP (including ObsTAP) service \citep{2019ivoa.spec.0927D} as particularly critical, both for external and internal use.
+Other IVOA standards that we expect to support include SCS \citep{2008ivoa.specQ0222P} for simple catalog searches, SIAv2 \citep{2015ivoa.spec.1223D} for image searches, SODA \citep{2017ivoa.spec.0517B} for image cutouts and mosaics, and VOSpace \citep{2018ivoa.spec.0621G} (in addition to WebDAV) for access to user files.
 We are exploring the applications of the recently settled DataLink protocol for providing a richer view of LSST's data holdings and their relationships.
 We will also ensure that LSST data are well-represented in the IVOA Registries, particularly to enable the convenient discovery of LSST data through non-LSST client tools.
 
